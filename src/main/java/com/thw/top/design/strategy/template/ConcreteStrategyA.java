@@ -1,11 +1,11 @@
-package com.thw.top.patterns.design.strategy.template;
+package com.thw.top.design.strategy.template;
 
 /**
  * @author tianhuiwen
  * @description 具体策略类A
  * @date 2018-11-17
  */
-public class ConcreteStrategyB implements Strategy {
+public class ConcreteStrategyA implements Strategy {
 
     @Override
     public void strategyInterface() {

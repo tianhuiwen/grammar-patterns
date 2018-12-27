@@ -1,4 +1,4 @@
-package com.thw.top.patterns.design.strategy.demo;
+package com.thw.top.design.strategy.demo;
 
 /**
  * @author tianhuiwen

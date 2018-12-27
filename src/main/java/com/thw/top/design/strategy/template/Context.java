@@ -1,4 +1,4 @@
-package com.thw.top.patterns.design.strategy.template;
+package com.thw.top.design.strategy.template;
 
 /**
  * 设计模式-策略模式

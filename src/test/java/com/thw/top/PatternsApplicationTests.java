@@ -1,4 +1,4 @@
-package com.thw.top.patterns;
+package com.thw.top;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

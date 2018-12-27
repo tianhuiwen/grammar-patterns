@@ -1,8 +1,11 @@
-package com.thw.top.patterns;
+package com.thw.top;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author tianhuiwen
+ */
 @SpringBootApplication
 public class PatternsApplication {
 
