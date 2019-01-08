@@ -264,7 +264,7 @@ JDK 1.8 API中包含了很多内置的函数式接口。有些是在以前版本
 
         // "aaa2", "aaa1"
         ```
-     - Sorted
+    - Sorted
 
         Sorted 是一个中间操作，能够返回一个排过序的流对象的视图。流对象中的元素会默认按照自然顺序进行排序，除非你自己指定一个Comparator接口来改变排序规则。
         ```java
@@ -281,7 +281,7 @@ JDK 1.8 API中包含了很多内置的函数式接口。有些是在以前版本
         System.out.println(stringCollection);
         // ddd2, aaa2, bbb1, aaa1, bbb3, ccc, bbb2, ddd1
         ```
-     - Map
+    - Map
 
         map是一个对于流对象的中间操作，通过给定的方法，它能够把流对象中的每一个元素对应到另外一个对象上。下面的例子就演示了如何把每个string都转换成大写的string. 不但如此，你还可以把每一种对象映射成为其他类型。对于带泛型结果的流对象，具体的类型还要由传递给map的泛型方法来决定。
         ```java
@@ -293,7 +293,7 @@ JDK 1.8 API中包含了很多内置的函数式接口。有些是在以前版本
 
         // "DDD2", "DDD1", "CCC", "BBB3", "BBB2", "AAA2", "AAA1"
         ```
-      - Match
+    - Match
 
         匹配操作有多种不同的类型，都是用来判断某一种规则是否与流对象相互吻合的。所有的匹配操作都是终结操作，只返回一个boolean类型的结果。
         ```java
@@ -319,7 +319,7 @@ JDK 1.8 API中包含了很多内置的函数式接口。有些是在以前版本
         System.out.println(noneStartsWithZ);      // true
         ```
 
-      - Count
+    - Count
 
         Count是一个终结操作，它的作用是返回一个数值，用来标识当前流对象中包含的元素数量。
         ```java
@@ -331,7 +331,7 @@ JDK 1.8 API中包含了很多内置的函数式接口。有些是在以前版本
 
         System.out.println(startsWithB);    // 3
         ```
-      - Reduce
+    - Reduce
 
         该操作是一个终结操作，它能够通过某一个方法，对元素进行削减操作。该操作的结果会放在一个Optional变量里返回。
         ```java
@@ -449,7 +449,7 @@ JDK 1.8 API中包含了很多内置的函数式接口。有些是在以前版本
         Instant instant = clock.instant();
         Date legacyDate = Date.from(instant);   // legacy java.util.Date
         ```
-     - Timezones
+    - Timezones
 
         时区类可以用一个ZoneId来表示。时区类的对象可以通过静态工厂方法方便地获取。时区类还定义了一个偏移量，用来在当前时刻或某时间与目标时区时间之间进行转换。
         ```java
@@ -464,7 +464,7 @@ JDK 1.8 API中包含了很多内置的函数式接口。有些是在以前版本
         // ZoneRules[currentStandardOffset=+01:00]
         // ZoneRules[currentStandardOffset=-03:00]
         ```
-      - LocalTime
+    - LocalTime
 
         本地时间类表示一个没有指定时区的时间，例如，10 p.m.或者17：30:15，下面的例子会用上面的例子定义的时区创建两个本地时间对象。然后我们会比较两个时间，并计算它们之间的小时和分钟的不同。
         ```java
@@ -492,7 +492,7 @@ JDK 1.8 API中包含了很多内置的函数式接口。有些是在以前版本
         LocalTime leetTime = LocalTime.parse("13:37", germanFormatter);
         System.out.println(leetTime);   // 13:37
         ```
-      - LocalDate
+    - LocalDate
 
         本地时间表示了一个独一无二的时间，例如：2014-03-11。这个时间是不可变的，与LocalTime是同源的。下面的例子演示了如何通过加减日，月，年等指标来计算新的日期。记住，每一次操作都会返回一个新的时间对象。
         ```java
@@ -514,7 +514,7 @@ JDK 1.8 API中包含了很多内置的函数式接口。有些是在以前版本
         LocalDate xmas = LocalDate.parse("24.12.2014", germanFormatter);
         System.out.println(xmas);   // 2014-12-24
         ```
-      - LocalDateTime
+    - LocalDateTime
 
         LocalDateTime表示的是日期-时间。它将刚才介绍的日期对象和时间对象结合起来，形成了一个对象实例。LocalDateTime是不可变的，与LocalTime和LocalDate的工作原理相同。我们可以通过调用方法来获取日期时间对象中特定的数据域。
         ```java
