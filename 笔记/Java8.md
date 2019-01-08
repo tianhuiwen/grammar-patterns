@@ -451,6 +451,7 @@ Java 8中的Collections类的功能已经有所增强，你可以之直接通过
         合并操作先看map中是否没有特定的key/value存在，如果是，则把key/value存入map，否则merging函数就会被调用，对现有的数值进行修改。
 
 <span id="8"/>
+
 ### 8. 时间日期 API
 Java 8 包含了全新的时间日期API，这些功能都放在了java.time包下。新的时间日期API是基于Joda-Time库开发的，但是也不尽相同。下面的例子就涵盖了大多数新的API的重要部分。
 - Clock
