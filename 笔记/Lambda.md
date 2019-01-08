@@ -60,7 +60,7 @@ for (String feature : features) {
 // Java 8之后：
 List features = Arrays.asList("Lambdas", "Default Method", "Stream API", "Date and Time API");
 features.forEach(n -> System.out.println(n));
-```java
+```
 使用 Java 8 的方法引用更方便，方法引用由::双冒号操作符标示，双冒号（::）操作符是 Java 中的方法引用。当们使用一个方法的引用时，目标引用放在 :: 之前，目标引用提供的方法名称放在 :: 之后，即目标引用::方法。比如:Person::getAge,调用Person的getAge方法;
 ```java
 features.forEach(System.out::println);
